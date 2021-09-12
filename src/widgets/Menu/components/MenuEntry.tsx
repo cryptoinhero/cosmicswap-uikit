@@ -31,11 +31,12 @@ const MenuEntry = styled.div<Props>`
   display: flex;
   align-items: center;
   height: ${MENU_ENTRY_HEIGHT}px;
-  padding: ${({ secondary }) => (secondary ? "0 32px" : "0 16px")};
+  padding: ${({ secondary }) => (secondary ? "0 22px" : "0 16px")};
   font-size: ${({ secondary }) => (secondary ? "14px" : "16px")};
   background-color: ${({ secondary, theme }) => (secondary ? theme.colors.background : "transparent")};
-  color: ${({ theme }) => theme.colors.textSubtle};
-  box-shadow: ${({ isActive, theme }) => (isActive ? `inset 4px 0px 0px ${theme.colors.primary}` : "none")};
+  background-color: ${({ isActive, theme }) => (isActive ? theme.colors.textSubtle : "transparent")};
+  color: ${({ isActive, theme }) => (isActive ? theme.colors.contrast: theme.colors.textSubtle)};
+  border-radius:  ${({ isActive }) => (isActive ? "9px": "0px")};
 
   a {
     display: flex;
@@ -45,11 +46,15 @@ const MenuEntry = styled.div<Props>`
   }
 
   svg {
-    fill: ${({ theme }) => theme.colors.textSubtle};
+    fill: ${({ isActive, theme }) => (isActive ? theme.colors.primary: theme.colors.textSubtle)};
+  }
+
+  div {
+    color: ${({ isActive, theme }) => (isActive ? theme.colors.contrast: theme.colors.textSubtle)};
   }
 
   &:hover {
-    background-color: ${({ theme }) => theme.colors.tertiary};
+    background-color: "transparent";
   }
 
   // Safari fix
