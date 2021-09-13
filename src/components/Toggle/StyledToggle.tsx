@@ -7,17 +7,17 @@ const scaleKeyValues = {
     handleWidth: "16px",
     handleLeft: "2px",
     handleTop: "2px",
-    checkedLeft: "calc(100% - 18px)",
-    toggleHeight: "20px",
-    toggleWidth: "36px",
+    checkedLeft: "calc(100% - 16px)",
+    toggleHeight: "2px",
+    toggleWidth: "40px",
   },
   md: {
     handleHeight: "26px",
     handleWidth: "26px",
     handleLeft: "3px",
     handleTop: "3px",
-    checkedLeft: "calc(100% - 30px)",
-    toggleHeight: "32px",
+    checkedLeft: "calc(100% - 26px)",
+    toggleHeight: "4px",
     toggleWidth: "56px",
   },
   lg: {
@@ -25,8 +25,8 @@ const scaleKeyValues = {
     handleWidth: "32px",
     handleLeft: "4px",
     handleTop: "4px",
-    checkedLeft: "calc(100% - 36px)",
-    toggleHeight: "40px",
+    checkedLeft: "calc(100% - 30px)",
+    toggleHeight: "8px",
     toggleWidth: "72px",
   },
 };
@@ -42,9 +42,9 @@ export const Handle = styled.div<HandleProps>`
   border-radius: 50%;
   cursor: pointer;
   height: ${getScale("handleHeight")};
-  left: ${getScale("handleLeft")};
   position: absolute;
-  top: ${getScale("handleTop")};
+  top: 50%;
+  transform: translate(0, -50%);
   transition: left 200ms ease-in;
   width: ${getScale("handleWidth")};
   z-index: 1;
@@ -57,6 +57,7 @@ export const Input = styled.input<InputProps>`
   position: absolute;
   width: 100%;
   z-index: 3;
+ 
 
   &:checked + ${Handle} {
     left: ${getScale("checkedLeft")};
@@ -73,7 +74,7 @@ export const Input = styled.input<InputProps>`
 
 const StyledToggle = styled.div<ToggleProps>`
   align-items: center;
-  background-color: ${({ theme, checked }) => theme.colors[checked ? "success" : "input"]};
+  background-color: ${({ theme, checked }) => theme.colors[checked ? "success" : "contrast"]};
   border-radius: 24px;
   box-shadow: ${({ theme }) => theme.shadows.inset};
   cursor: pointer;
