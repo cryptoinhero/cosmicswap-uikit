@@ -3176,8 +3176,7 @@ var Toggle = function (_a) {
     var isChecked = !!checked;
     return (React.createElement(StyledToggle, { checked: isChecked, scale: scale },
         React.createElement(Input, __assign({ checked: checked, scale: scale }, props, { type: "checkbox" })),
-        React.createElement(Handle, { scale: scale },
-            React.createElement("span", null))));
+        React.createElement(Handle, { scale: scale })));
 };
 
 var breakpointMap = {
