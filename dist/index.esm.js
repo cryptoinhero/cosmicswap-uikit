@@ -3115,20 +3115,20 @@ var scales = {
 
 var scaleKeyValues = {
     sm: {
-        handleHeight: "16px",
-        handleWidth: "16px",
+        handleHeight: "12px",
+        handleWidth: "12px",
         handleLeft: "2px",
         handleTop: "2px",
-        checkedLeft: "calc(100% - 16px)",
+        checkedLeft: "calc(100% - 12px)",
         toggleHeight: "2px",
-        toggleWidth: "40px",
+        toggleWidth: "32px",
     },
     md: {
-        handleHeight: "26px",
-        handleWidth: "26px",
+        handleHeight: "24px",
+        handleWidth: "24px",
         handleLeft: "3px",
         handleTop: "3px",
-        checkedLeft: "calc(100% - 26px)",
+        checkedLeft: "calc(100% - 24px)",
         toggleHeight: "4px",
         toggleWidth: "56px",
     },
@@ -3137,7 +3137,7 @@ var scaleKeyValues = {
         handleWidth: "32px",
         handleLeft: "4px",
         handleTop: "4px",
-        checkedLeft: "calc(100% - 30px)",
+        checkedLeft: "calc(100% - 32px)",
         toggleHeight: "8px",
         toggleWidth: "72px",
     },
@@ -3205,8 +3205,8 @@ var shadows = {
 var spacing = [0, 4, 8, 16, 24, 32, 48, 64];
 var radii = {
     small: "4px",
-    default: "16px",
-    card: "24px",
+    default: "8px",
+    card: "12px",
     circle: "50%",
 };
 var zIndices = {
@@ -3443,7 +3443,7 @@ var lightColors = __assign(__assign(__assign({}, baseColors), additionalColors),
         violetAlt: "linear-gradient(180deg, #CBD7EF 0%, #9A9FD0 100%)",
         gold: "linear-gradient(180deg, #FFD800 0%, #FDAB32 100%)",
     } });
-var darkColors = __assign(__assign(__assign({}, baseColors), additionalColors), { secondary: "#9A6AFF", background: "#050B22", backgroundDisabled: "#3c3742", backgroundAlt: "#0E1035", cardBorder: "#2B397E", contrast: "#FFFFFF", dropdown: "#0F152A", dropdownDeep: "#100C18", invertedContrast: "#191326", input: "#372F47", inputSecondary: "#262130", primaryDark: "#0098A1", tertiary: "#353547", text: "#FFFFFF", textDisabled: "#666171", textSubtle: "#5C606F", disabled: "#524B63", gradients: {
+var darkColors = __assign(__assign(__assign({}, baseColors), additionalColors), { secondary: "#9A6AFF", background: "#050B22", backgroundDisabled: "#3c3742", backgroundAlt: "#0E1035", cardBorder: "#2B397E", contrast: "#FFFFFF", dropdown: "#0F152A", dropdownDeep: "#100C18", invertedContrast: "#191326", input: "#372F47", inputSecondary: "#262130", primaryDark: "#0098A1", tertiary: "#353547", text: "#FFFFFF", textDisabled: "#666171", textSubtle: "#9DB4F2", disabled: "#524B63", gradients: {
         bubblegum: "linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)",
         inverseBubblegum: "linear-gradient(139.73deg, #3D2A54 0%, #313D5C 100%)",
         cardHeader: "linear-gradient(166.77deg, #3B4155 0%, #3A3045 100%)",
@@ -4292,8 +4292,8 @@ var MenuEntry = styled.div(templateObject_3$3 || (templateObject_3$3 = __makeTem
     var secondary = _a.secondary, theme = _a.theme;
     return (secondary ? theme.colors.background : "transparent");
 }, function (_a) {
-    var isActive = _a.isActive, theme = _a.theme;
-    return (isActive ? theme.colors.textSubtle : "transparent");
+    var isActive = _a.isActive; _a.theme;
+    return (isActive ? '#14192E' : "transparent");
 }, function (_a) {
     var isActive = _a.isActive, theme = _a.theme;
     return (isActive ? theme.colors.contrast : theme.colors.textSubtle);
