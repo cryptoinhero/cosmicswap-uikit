@@ -89,7 +89,7 @@ export const BarBackground = styled.div<DisabledProp>`
   background-color: #25345E;
   height: 2px;
   position: absolute;
-  top: 18px;
+  top: 7px;
   width: 100%;
 `;
 
@@ -99,5 +99,5 @@ export const BarProgress = styled.div<DisabledProp>`
   height: 2px;
   left:2px;
   position: absolute;
-  top: 17px;
+  top: 7px;
 `;

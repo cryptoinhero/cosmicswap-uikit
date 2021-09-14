@@ -13,13 +13,13 @@ import {
 import SliderProps from "./types";
 
 const RangeBreakPoint = styled.ul`
-  margin: 29px 0 0;
+  margin: 20px 0 0;
   padding: 0;
   list-style: none;
   color: #fff;
   left: 12.5%;
   position: absolute;
-  width: calc(100% - 6px);
+  width: calc(100% - 7px);
   li {
     position: relative;
     float: left;
@@ -30,7 +30,7 @@ const RangeBreakPoint = styled.ul`
     cursor: pointer;
     &:first-child {
       position: absolute;
-      left: calc(-25% + 2px);
+      left: calc(-25% + 3px);
       &::before {
         background: #fff;
         z-index: 1;
@@ -38,7 +38,7 @@ const RangeBreakPoint = styled.ul`
     }
     &::before {
       position: absolute;
-      top: -15px;
+      top: -17px;
       right: 0;
       left: 5px;
       content: "";
@@ -103,6 +103,7 @@ const Slider: React.FC<SliderProps> = ({
           onChange={handleChange}
           isMax={isMax}
           disabled={disabled}
+          style={{height: 'auto'}}
         />
       </BunnySlider>
     </Box>
