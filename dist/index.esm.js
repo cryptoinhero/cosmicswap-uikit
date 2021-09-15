@@ -2062,10 +2062,11 @@ Link.defaultProps = {
 var templateObject_1$C;
 
 var LinkExternal = function (_a) {
+    var _b;
     var children = _a.children, props = __rest(_a, ["children"]);
     return (React.createElement(Link, __assign({ external: true }, props),
         children,
-        React.createElement(Icon$19, { color: props.color ? props.color : "primary", ml: "4px" })));
+        React.createElement(Icon$19, { color: props.color ? props.color : "primary", width: (_b = props.fontSize) !== null && _b !== void 0 ? _b : '20px', ml: "4px" })));
 };
 
 var variants$3 = {
