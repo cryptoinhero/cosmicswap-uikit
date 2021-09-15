@@ -4,7 +4,7 @@ import { CheckboxProps, scales } from "./types";
 const getScale = ({ scale }: CheckboxProps) => {
   switch (scale) {
     case scales.SM:
-      return "24px";
+      return "18px";
     case scales.MD:
     default:
       return "32px";
@@ -21,10 +21,7 @@ const Checkbox = styled.input.attrs({ type: "checkbox" })<CheckboxProps>`
   width: ${getScale};
   vertical-align: middle;
   transition: background-color 0.2s ease-in-out;
-  border: 0;
-  border-radius: 8px;
-  background-color: ${({ theme }) => theme.colors.input};
-  box-shadow: ${({ theme }) => theme.shadows.inset};
+  border: 1px solid  ${({ theme }) => theme.colors.textSubtle};
 
   &:after {
     content: "";
@@ -52,7 +49,6 @@ const Checkbox = styled.input.attrs({ type: "checkbox" })<CheckboxProps>`
   }
 
   &:checked {
-    background-color: ${({ theme }) => theme.colors.success};
     &:after {
       border-color: white;
     }
