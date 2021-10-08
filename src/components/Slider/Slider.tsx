@@ -31,6 +31,7 @@ const RangeBreakPoint = styled.ul`
     &:first-child {
       position: absolute;
       left: calc(-25% + 3px);
+      pointer-events: none;
       &::before {
         background: #fff;
         z-index: 1;
