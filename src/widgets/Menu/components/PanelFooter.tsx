@@ -60,7 +60,7 @@ const PanelFooter: React.FC<Props> = ({
         <SocialLinks />
       </SocialEntry>
       <SettingsEntry>
-        <Text bold color="textDisabled">@CosmicSwap 2021</Text>
+        <Text bold color="textDisabled">©CosmicSwap 2021</Text>
       </SettingsEntry>
     </Container>
   );

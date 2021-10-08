@@ -4402,7 +4402,7 @@ var PanelFooter = function (_a) {
         React__default['default'].createElement(SocialEntry, null,
             React__default['default'].createElement(SocialLinks$1, null)),
         React__default['default'].createElement(SettingsEntry, null,
-            React__default['default'].createElement(Text, { bold: true, color: "textDisabled" }, "@CosmicSwap 2021"))));
+            React__default['default'].createElement(Text, { bold: true, color: "textDisabled" }, "\u00A9CosmicSwap 2021"))));
 };
 var templateObject_1$9, templateObject_2$5, templateObject_3$2;
 

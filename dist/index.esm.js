@@ -4388,7 +4388,7 @@ var PanelFooter = function (_a) {
         React.createElement(SocialEntry, null,
             React.createElement(SocialLinks$1, null)),
         React.createElement(SettingsEntry, null,
-            React.createElement(Text, { bold: true, color: "textDisabled" }, "@CosmicSwap 2021"))));
+            React.createElement(Text, { bold: true, color: "textDisabled" }, "\u00A9CosmicSwap 2021"))));
 };
 var templateObject_1$9, templateObject_2$5, templateObject_3$2;
 
