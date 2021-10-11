@@ -28,6 +28,7 @@ const RangeBreakPoint = styled.ul`
     color: #fff;
     font-size: 14px;
     cursor: pointer;
+    pointer-events: none;
     &:first-child {
       position: absolute;
       left: calc(-25% + 3px);
